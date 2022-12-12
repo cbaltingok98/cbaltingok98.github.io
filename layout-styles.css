@@ -32,6 +32,8 @@ header .isimDes{
     padding-left: 0;
     padding-right: 0;
     display: block;
+    border-radius: 0.4em;
+    letter-spacing: 4px;
 }
 header .row .col-lg-4 img{
     width: 90%;
@@ -58,7 +60,7 @@ ul .nav-link:hover{
 .section-1 .row .col-md-5 .pray img{
     opacity: 0.9;
     width: 80%;
-    border-radius: 0.2em;
+    border-radius: 0.4em;
 }
 
 .section-1 .row .col-md-5:last-child{
@@ -69,11 +71,18 @@ ul .nav-link:hover{
     
     top: 0vmin;
     background: white;
-    border-radius: 3px;
+    border-radius: 0.4em;
     text-align: left;
     padding: 0vmin 5vmin 10vmin 5vmin;
     margin-bottom: 5vmin;
     box-shadow: 5px 25px 42px rgba(0, 0, 0, 0.2);
+    
+}
+
+.section-1 .row .col-md-5 img{
+    
+
+    box-shadow: 5px 25px 42px rgba(0, 0, 0, 0.5);
     
 }
 .section-1 .row .col-md-7 .panel h1{
@@ -187,6 +196,7 @@ ul .nav-link:hover{
 .container-games {
 	margin: 5px;
     padding: 5px;
+
 }
 
 .icon-container-games img {
@@ -199,6 +209,7 @@ ul .nav-link:hover{
 	align-items: flex-end;
 	background-color: black;
 	position: relative;
+
 }
 
 .game-h2 {
