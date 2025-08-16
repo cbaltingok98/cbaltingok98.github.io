@@ -1,298 +1,327 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celik Berk Altingok</title>
-    <link rel="shortcut icon" type="image/png" href="./Media/myAvatar.png">
-    <link rel="stylesheet" type="text/css" href="./layout-styles.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <title>Çelik Berk Altıngök - Portfolio</title>
+    <link rel="stylesheet" href="layout-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-
-<header>
-
-    <div class="container-fluid p-0">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h1 class="isim">ÇELİK BERK ALTINGÖK</h1>
-                    <h6 class="isimDes">GAME DEVELOPER</h6>
-                </div>
-                <div class="col-lg-4">
-                    <img class="img-thumbnail rounded-circle berkHeaderPhoto" src="./Media/newPP4.JPG" alt="">
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
             </div>
-
-            <div class="row">
-                <div class="col-md-9">
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="container-fluid pt-3">
-                            <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
-                            <ul class="navbar-nav container">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <li class="nav-item container mr-3">
-                                            <a class="nav-link" href="#skills">SKILLS</a>
-                                        </li>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <li class="nav-item container mr-3">
-                                            <a class="nav-link" href="#mygames">GAMES</a>
-                                        </li>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <li class="nav-item container mr-3">
-                                            <a class="nav-link" href="https://drive.google.com/drive/folders/1ko_dRMWOfQTT6Jw1rhbGQhmk6f_psYo2?usp=sharing" target="_blank">GAMEPLAY</a>
-                                        </li>
-                                    </div>
-                                </div>
-                            </ul>
-                            <!-- </div> -->
-                        </div>
-
-                    </nav>
-                </div>
-
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
+    </nav>
 
-    </div>
-</header>
-
-
-
-<div id="aboutme" class="section-1 container container-fluid">
-    <div class="text-center">
-        <div class="row">
-            <div class="col-md-5 p-0">
-                <div class="pray">
-                    <img src="./Media/ProfilePic copy.jpg" alt="">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Çelik Berk Altıngök</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I'm a <span class="typing-text" id="typing-text"></span>
+                </h2>
+                <p class="hero-description">
+                    Passionate game developer creating mobile games
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    <a href="https://drive.google.com/file/d/1IKsZeaYlp_aixsltMwPIxyHhOCbLAtdh/view" target="_blank" class="btn btn-outline">CV</a>
                 </div>
             </div>
-            <div class="col-md-7 p-0">
-                <div class="panel tex-left">
-                    <h1>ABOUT ME</h1>
-                    <p class="aboutMeParagraph">
-                        Hi there! My name is Berk, and I am a graduate of California State University, East Bay, where I earned my bachelor's degree in computer science. I am a passionate game developer who specializes in developing mobile games.
-Since graduating, I have been focused on honing my skills as a game developer and building a portfolio of exciting and engaging mobile games. I am always looking for new challenges and opportunities to grow and learn, and I am excited to see where my passion for game development will take me next.
-In my free time, I enjoy playing and testing out new games, as well as staying up to date with the latest developments in the world of game development. I am a dedicated and hardworking individual, and I am committed to delivering high-quality mobile games that players will love.
+            <div class="hero-image">
+                <div class="hero-avatar">
+                    <img src="Media/newPP.png" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a passionate Game Seveloper with over 4 years of experience in creating 
+                        mobile games. I love tackling complex problems and creating polished experiences.
                     </p>
-                    <p class="pt-4">THANK YOU FOR VISITING :)</p>
-                    <p class="pt-4"><-- Look I'm COOL!</p>
-                    <div class="container-fluid p-0">
-                        <div class="row text-center">
-                            <div class="col-md-12">
-                                <div class="column ">
-                                    <a href="https://drive.google.com/open?id=1IKsZeaYlp_aixsltMwPIxyHhOCbLAtdh" target="_blank" data-toggle="tooltip" data-placement="bottom" title="RESUME"><i class="far fa-file-pdf"></i></a>
-                                    <a href="https://www.linkedin.com/in/cbaltingok/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="LINKEDIN"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/cbaltingok98" target="_blank" data-toggle="tooltip" data-placement="bottom" title="GITHUB"><i class="fab fa-github"></i></a>                                    
-                                    <!-- <a href="https://www.facebook.com/celikberk.altingok" target="_blank" data-toggle="tooltip" data-placement="bottom" title="FACEBOOK"><i class="fab fa-facebook-f"></i></a> -->
-                                    <!-- <a href="https://www.instagram.com/cbaltingok/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="INSTAGRAM"><i class="fab fa-instagram"></i></a> -->
-                                    <!-- <a href="https://www.hackerrank.com/cbaltingok" target="_blank" data-toggle="tooltip" data-placement="bottom" title="HACKERRANK"><i class="fab fa-hackerrank"></i></a>  -->
-                                </div>
+                    <p class="about-description">
+                        When I'm not coding, you'll find me exploring new technologies, working on personal projects and eating pizza.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3 class="stat-number">100+</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3 class="stat-number">4+</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Apr 2022 - Present</div>
+                        <div class="timeline-content">
+                            <h4>APPS Teknoloji A.Ş.</h4>
+                            <p>Game Developer</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Aug 2021 - Apr 2022</div>
+                        <div class="timeline-content">
+                            <h4>Pixelized Studio</h4>
+                            <p>Game Developer</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Oct 2019 - May 2020</div>
+                        <div class="timeline-content">
+                            <h4>CSU Easy Bay IT Solutions</h4>
+                            <p>Full Stack Web Developer Student Assistant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Engines</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fa-brands fa-unity"></i>
+                            <span>Unity</span>
+                        </div>                
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Rider</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">      
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Media/DrillAndCollect.jpeg" alt="Drill and Collect">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://apps.apple.com/app/drill-collect-idle-mine-dig/id1642304873" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Drill & Collect: idle mine dig</h3>
+                        <p class="project-description">
+                            Arcade Idle
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">+18M</span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Media/stickerMatchIcon.png" alt="Sticker Match">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.Rage.MatchStickers" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sticker Match</h3>
+                        <p class="project-description">
+                            Puzzle
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>   
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Media/DriveToDie.png" alt="Drive to Die">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://apps.apple.com/app/drive-to-die/id6444769382" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Drive to Die</h3>
+                        <p class="project-description">
+                            Puzzle
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Personal Project</span>
+                        </div>
+                    </div>
+                </div>                             
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's talk about your project</h3>
+                    <p>I'm always interested in new opportunities and interesting projects. Whether you have a project in mind or just want to chat, feel free to reach out!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>cbaltingok@gmail.com</p>
+                            </div>
+                        </div>                        
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Ankara, TR</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/cbaltingok98" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/cbaltingok/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://drive.google.com/file/d/1IKsZeaYlp_aixsltMwPIxyHhOCbLAtdh/view" target="_blank" class="social-link"><i class="far fa-file-pdf"></i></a>                                            
+                    </div>
                 </div>
                 
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="section-2 container-fluid">
-
-    <div class="container">
-        <div class="content text-center">
-            <h1 id="skills">SKILLS</h1>
-            <div class="row skillsRow">
-                <div class="col-md-3 col-sm-6">
-                    <img class="skillsImg" src="./Media/ISO_C++_Logo.svg" alt="" data-toggle="tooltip" data-placement="top" title="C++">
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <img class="skillsImg" src="./Media/csharp_logo.png" alt="" data-toggle="tooltip" data-placement="top" title="C#">
-                </div> 
-                <div class="col-md-3 col-sm-6">
-                    <img class="skillsImg" src="./Media/unity-logo.png" alt="" data-toggle="tooltip" data-placement="top" title="UNITY">
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <img class="skillsImg" src="./Media/gitLogo.png" alt="" data-toggle="tooltip" data-placement="top" title="Git">
-                </div>                
-            </div>
-        </div>
-    </div>
-
-    <div  id="mygames"  class="container">
-        <div class="content text-center">
-            <h1 id="skills">PERSONAL PROJECTS</h1>
-                <div class="row skillsRow">  
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="Media/DriveToDie.png" alt="" titles="Drive">
-                        <h4>Drive to Die</h4>
-                        <a href="https://apps.apple.com/us/app/drive-to-die/id6444769382" target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                    </div>                                          
-                </div>
-        </div>
-    </div>
-
-    <div  id="mygames2"  class="container"> 
-        <div class="content text-center">
-            <h1 id="skills">WORTH MENTIONING</h1>
-                <div class="row skillsRow"> 
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/DrillAndCollect.jpeg" alt="" title="Drill and Collect">
-                        <h4>Drill and Collect</h4>
-                        <a href="https://apps.apple.com/us/app/drill-and-collect/id1642304873" target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                    </div> 
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/TheOneStoreICON.png" alt="" title="Match Frenzy">
-                        <h4>Match Frenzy</h4>
-                        <a href="https://apps.apple.com/us/app/match-frenzy-puzzle-game/id6444211858" target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                    </div>  
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/Squeeze_Farm_Icon_512x512.png" alt="" title="Squeeze Farm">
-                        <h4>Squeeze Farm</h4>
-                        <a href="https://apps.apple.com/us/app/squeezing-farm/id6443504669" target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                    </div> 
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/Nice_Cream_512x512_Icon.jpg" alt="" title="Nice Cream">
-                        <h4>Nice Cream</h4>
-                        <a href='https://apps.apple.com/us/app/nice-cream/id1635098090' target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                    </div>                                                                                                                                
-                </div>  
-                <div class="row skillsRow"> 
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/rpsRush.png" alt="" title="Rock Paper Slap">
-                        <h4>Rock Paper Slap</h4>
-                        <a href="https://apps.apple.com/us/app/rock-paper-slap/id1641050979" target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
+                <!-- <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/Social_Idle_Icon_512x512.png" alt="" title="Social Idle">
-                        <h4>Social Idle</h4>
-                        <a href="https://apps.apple.com/us/app/social-idle/id6443617484"  target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                    </div>                  
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/Stack_Surf_Icon_512x512 (1).png" alt="" title="Stack Surf">
-                        <h4>Stack Surf</h4>
-                        <a href='https://apps.apple.com/us/app/stack-surf-puzzle/id6444038032' target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                    </div>  
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/queueMaster.png" alt="" title="Queue Master">
-                        <h4>Queue Master</h4>
-                        <a href="https://apps.apple.com/us/app/queue-master-create-a-path/id1645258387" target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                    </div>                                                        
-                </div>  
-                <div class="row skillsRow">                                                                   
-                </div>  
-        </div>
-    </div>
-
-    <div  id="mygames2"  class="container">
-        <div class="content text-center">
-            <h1 id="skills">FAVOURITES FROM MY FIRST GAMES</h1>
-                <div class="row skillsRow">  
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/FulfillItIcon.jpeg" alt="" title="Fulfill It!">
-                        <h4>Fulfill It!</h4>
-                        <a href='https://play.google.com/store/apps/details?id=com.PixelizedStudio.FullFillit' target="_blank"><img class="store-badge store-badge-google" alt='Get it on Google Play' src='./Media/google-play-badge.png'/></a>
-                    </div>  
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/456SniperDoll.jpeg" alt="" title="456: SNIPER DOLL">
-                        <h4>456: Sniper Doll</h4>
-                        <a href="https://apps.apple.com/tr/app/456-sniper-doll/id1590208977?l=tr#?platform=iphone" target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                    </div>   
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/ropeChallange.jpeg" alt="" title="456: ROPE CHALLENGE">
-                        <h4>456: Rope Challenge</h4>
-                        <a href="https://apps.apple.com/tr/app/456-rope-challange/id1596924986#?platform=iphone" target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                    </div>                                            
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/WetAndRun.png" alt="" title="Wet And Run">
-                        <h4>Wet And Run</h4>
-                        <a href="https://apps.apple.com/tr/app/wet-and-run/id1601858447#?platform=iphone" target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                    </div>                                
-                </div>  
-                <div class="row skillsRow"> 
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/MakeUpDrive.png" alt="" title="MakeUp Drive">
-                        <h4>MakeUp Drive</h4>
-                        <a href="https://apps.apple.com/tr/app/makeup-drive/id1599473063#?platform=iphone" target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                    </div> 
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/slayThemAll.png" alt="" title="SLAY THEM ALL">
-                        <h4>Slay Them All</h4>
-                        <a href="https://apps.apple.com/tr/app/slay-them-all/id1585644147?l=tr#?platform=iphone"  target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                    </div>   
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/Colorway_3D.001.jpeg" alt="" title="COLORWAY 3D">
-                        <h4>Colorway 3D</h4>
-                        <a href='https://apps.apple.com/tr/app/colorway-3d/id1553529932#?platform=iphone' target="_blank"><img class="store-badge" alt='Get it on App Store' src='./Media/appstore-black-badge.svg'/></a>
-                        <a href='https://play.google.com/store/apps/details?id=com.Kontein.Colorway3D' target="_blank"><img class="store-badge store-badge-google" alt='Get it on Google Play' src='./Media/google-play-badge.png'/></a>
-                    </div>               
-                    <div class="col-md-3 col-sm-6">
-                        <img class="skillsImg gamesImg" src="./Media/colord.001.jpeg" alt="" title="COLORD">
-                        <h4>Colord</h4>
-                        <a href='https://play.google.com/store/apps/details?id=com.Kontein.Colord' target="_blank"><img class="store-badge store-badge-google" alt='Get it on Google Play' src='./Media/google-play-badge.png'/></a>
-                    </div>                                      
-                </div>  
-        </div>
-    </div>
-
-    <div  id="mygames"  class="container">
-        <div class="content text-center">
-            <h1 id="skills">Mobile Games Developed: 100+</h1>
-        </div>
-    </div>
-   
-    <div id="contactCard" class="container-fluid text-center">
-        <h1 id="contact">CONTACT</h1>
-        <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
-            <div class="rect">
-                <i class="fas fa-envelope"></i>
-                <h1>E-MAIL</h1>
-                <p>cbaltingok@gmail.com</p>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form> -->
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-<footer>
-    <div id="social" class="container-fluid p-0">
-        <div class="row text-center">
-            <div class="col-md-12">
-                <h1 class="">FOLLOW ME</h1>
-                <div class="column ">
-                    <!-- <a href="https://www.facebook.com/celikberk.altingok" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
-                    <!-- <a href="https://www.instagram.com/cbaltingok/" target="_blank"><i class="fab fa-instagram"></i></a> -->
-                    <a href="https://github.com/cbaltingok98" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/cbaltingok/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Çelik Berk Altıngök. All rights reserved.</p>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script>    
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    });
-</script>
-    
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <script src="script.js"></script>
 </body>
-
 </html>
